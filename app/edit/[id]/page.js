@@ -14,8 +14,8 @@ const EditPage = ({ params }) => {
   //console.log(id);
   useEffect(() => {
     const resolveParams = async () => {
-      const resolvedParams = await params; // Unwrap Promise
-      setId(resolvedParams.id); // Extract and store ID
+      const resolvedParams = await params;
+      setId(resolvedParams.id); 
       console.log(id);
     };
     resolveParams();
